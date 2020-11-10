@@ -48,7 +48,7 @@
     "command": "workbench.action.terminal.newInActiveWorkspace"
   },
   {
-    "key": "cmd+;",
+    "key": "ctrl+alt+cmd+;",
     "command": "terminal.toggle"
   },
   {
@@ -564,6 +564,14 @@
     "key": "pageup",
     "command": "-cursorPageUp",
     "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+;",
+    "command": "workbench.action.focusSideBar"
+  },
+  {
+    "key": "cmd+0",
+    "command": "-workbench.action.focusSideBar"
   }
 ]
 
