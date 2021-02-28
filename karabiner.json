@@ -181,10 +181,6 @@
                   {
                     "key_code": "right_arrow",
                     "modifiers": ["left_command"]
-                  },
-                  {
-                    "key_code": "return_or_enter",
-                    "modifiers": ["left_shift"]
                   }
                 ],
                 "type": "basic"

@@ -1,5 +1,7 @@
 // Place your key bindings in this file to overwrite the defaults
 [
+  { "key": "ctrl+j", "command": "editor.action.insertLineAfter" },
+  { "key": "ctrl+k", "command": "editor.action.insertLineBefore" },
   {
     "key": "ctrl+shift+n",
     "command": "explorer.newFile"
@@ -9,14 +11,14 @@
     "command": "explorer.newFolder"
   },
   {
-    "key": "f",
+    "key": "cmd+n",
     "command": "explorer.newFile",
-    "when": "explorerViewletVisible && explorerViewletFocus && !inputFocus"
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
   },
   {
-    "key": "shift+f",
+    "key": "alt+n",
     "command": "explorer.newFolder",
-    "when": "explorerViewletVisible && explorerViewletFocus && !inputFocus"
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
   },
   {
     "key": "d",
@@ -218,7 +220,7 @@
     "command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation"
   },
   {
-    "key": "ctrl+alt+cmd+space",
+    "key": "alt+space",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
@@ -243,12 +245,12 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "up",
+    "key": "ctrl+shift+alt+cmd+up",
     "command": "cursorMove",
     "args": {
       "to": "up",
       "by": "line",
-      "value": 10
+      "value": 15
     },
     "when": "editorTextFocus"
   },
@@ -258,7 +260,7 @@
     "args": {
       "to": "down",
       "by": "line",
-      "value": 10
+      "value": 15
     },
     "when": "editorTextFocus"
   },
@@ -386,16 +388,16 @@
     "command": "workbench.action.navigateRight",
     "when": "editorTextFocus"
   },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.navigateUp",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "workbench.action.navigateDown",
-    "when": "editorTextFocus"
-  },
+  // {
+  //   "key": "ctrl+k",
+  //   "command": "workbench.action.navigateUp",
+  //   "when": "editorTextFocus"
+  // },
+  // {
+  //   "key": "ctrl+j",
+  //   "command": "workbench.action.navigateDown",
+  //   "when": "editorTextFocus"
+  // },
   {
     "key": "ctrl+l",
     "command": "workbench.action.terminal.focusNextPane",
@@ -526,7 +528,7 @@
     "command": "-workbench.action.gotoLine"
   },
   {
-    "key": "ctrl+alt+cmd+p",
+    "key": "ctrl+shift+alt+cmd+p",
     "command": "cursorTop",
     "when": "textInputFocus"
   },
@@ -536,7 +538,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "up",
+    "key": "ctrl+alt+cmd+p",
     "command": "cursorUp",
     "when": "textInputFocus"
   },
@@ -572,6 +574,15 @@
   {
     "key": "cmd+0",
     "command": "-workbench.action.focusSideBar"
+  },
+  {
+    "key": "ctrl+alt+cmd+p",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+down",
+    "command": "-cursorBottom",
+    "when": "textInputFocus"
   }
 ]
-
